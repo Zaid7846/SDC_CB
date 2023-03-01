@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" type="text/css" href="style.css" /> 
+    </head>
+
+    <body>
+      <p>Enter the PID No below</p>
+      <input type="text" value="" id="quote">
+      <button onclick="copyFunction()">Copy Query</button>
+      <p>Copy the above Query and paste in Inspector, copy the data as JSON Format and paste in below area </p>
+      
+      <input  type="text" id="fname">
+      <button type="button" onclick="myFunction()">Submit</button>
+      
+         <div>
+            <h1>Cost Budget UI Values</h1>
+            <br>
+            <h2>
+               <span id="amount">
+                
+               </span>
+               <br>
+               <span id="expenseCost">
+                
+               </span>
+               <br>
+               <span id="travelCost">
+                
+               </span>
+               <br>
+               <span id="laborCost">
+                
+               </span>
+               <br>
+               <span id="totalCostBudget">
+                
+               </span>
+            </h2>
+            
+         </div>
+
+         <table>
+            <thead>
+               <tr>
+                  <th>Id</th>
+                  <th>Milestone name</th>
+                  <th>Milestone Cost</th>
+                  <th>Labor Rate</th>
+                  <th>Non Labor Cost</th>
+                  <th>Planned Hours</th>
+                  <th>Travel Hours</th>
+                  <th>Travel Expenses</th>
+                  <th>Total Labor Cost (Manual)</th>
+                  <th>Total Travel Cost (Manual)</th>
+                  <th>Total Expenses Cost (Manual)</th>
+               </tr>
+            </thead>
+            <tbody id="data-output">
+               <!-- Prodcuts from javascript file in here. -->
+            </tbody>
+         </table>
+      
+        
+      
+        <script src="script.js"></script> <!-- Link to the javascript file -->
+    </body>
+</html>
+

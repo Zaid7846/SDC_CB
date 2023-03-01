@@ -1,0 +1,32 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 85%;
+  }
+  
+  td, th {
+    border: 1px solid #4e4141;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr{
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+
+  tr:hover {background-color: #D6EEEE;}
+
+  
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #temp { 
+    position:absolute;
+    opacity:0;
+ }
+ #copytext {
+   height:150;width:162;background-color:pink
+ }
