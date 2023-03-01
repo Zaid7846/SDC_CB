@@ -2,10 +2,12 @@
 	
 	function copyFunction() {
 		// Get the text field
-		var copyText = document.getElementById("quote").value;
+		var copyText = document.getElementById("pid").value;
+		var copyQuote = document.getElementById("quote").value;
 	    var query = `select id, name, pse__Milestone_Cost__c, ds_Labor_Rate__c, ds_Non_Labor_Cost__c, pse__Planned_Hours__c, ds_Travel_Hours__c, DS_Labor_Cost__c, ds_Travel_Cost__c,  ds_Travel_Expense__c from pse__Milestone__c 
 		where  Oracle_Project_ID__c = '${copyText}'
-		and RecordTypeView__c = 'Service Feature'`
+		and RecordTypeView__c = 'Service Feature'
+		and DS_Quote_Number__c = '${copyQuote}'`
 		// Select the text field
 		// copyText.select();
 		// copyText.setSelectionRange(0, 99999); // For mobile devices
